@@ -1,7 +1,7 @@
 ---
-title: "Trait Descriptive Adjectives"
-subtitle: "Code and supplemental material"
-author: "David M. Condon, Joshua Coughlin, & Sara J. Weston"
+title: "Occupational Prestige Ratings"
+subtitle: "ratings and code"
+author: "Bradley T. Hughes, Sanjay Srivastava, David M. Condon"
 output: 
   html_document:
     toc: TRUE
