@@ -1,0 +1,12 @@
+name: Occupational prestige
+output_dir: "."
+navbar:
+  title: "TDA"
+  left:
+  right:
+    - icon: fa-github
+      href: https://github.com/occupational-prestige/opratings
+output:
+  html_document:
+    lib_dir: site_libs
+    self_contained: no
