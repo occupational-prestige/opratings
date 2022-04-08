@@ -1,7 +1,9 @@
 ---
+title: Occupational Prestige Ratings
+subtitle: 
+author: 
 output: 
   html_document:
-    title: testit
     toc: FALSE
     toc_depth: 1
     toc_float: TRUE

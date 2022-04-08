@@ -1,7 +1,7 @@
 name: Occupational prestige
 output_dir: "."
 navbar:
-  title: "Occupational Prestige Ratings"
+  title: "OPRv1.0"
   left:
   right:
     - text: O*NET
