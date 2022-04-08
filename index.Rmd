@@ -1,7 +1,7 @@
 ---
 title: Occupational Prestige Ratings
 subtitle: 
-author: 
+author: [--- author names blinded for review ---]
 output: 
   html_document:
     toc: FALSE
@@ -27,4 +27,4 @@ For more details, see [--- citation blinded for review ---]
 
 [Insert info about: the source files, downloading the data, planned updates, how users can provide feedback or suggestions, and... maybe some commentary about responsible use and interpretation? Let's discuss.]
 
-[build database interface... try putting it here, though it may be more functional to have it as a separate page.]
+### DATABASE GOES HERE
