@@ -1,36 +1,30 @@
 ---
-title: "Occupational Prestige Ratings"
-subtitle: "ratings and code"
-author: "Bradley T. Hughes, Sanjay Srivastava, David M. Condon"
+title: 
+subtitle: 
+author: 
 output: 
   html_document:
-    toc: TRUE
-    toc_depth: 2
+    toc: FALSE
+    toc_depth: 1
     toc_float: TRUE
     theme: cosmo
 ---
 
-<u>To cite these data:</u>
+```{r load_packages, message=FALSE, warning=FALSE, include=FALSE} 
+library(fontawesome)
+```
 
-<font size="2">Condon, D. M., Coughlin, J., & Weston, S. J. (2022). Personality Trait Descriptors: 2,818 Trait Descriptive Adjectives characterized by familiarity, frequency of use, and prior use in psycholexical research. *Journal of Open Psychology Data*.</font>
+### Overview
 
+[Insert something like the abstract from the submitted manuscript here.]
 
+For more details, see [--- citation blinded for review ---]
+<!-- 
+<font size="2">Hughes, B. T., Srivastava, S., Leszko, M., & Condon, D. M. (under review). Occupational Prestige: The Psychosocial Indicator of Socioeconomic Status. *Journal TBD*.</font>
+-->
 
-# Background
+### About the ratings
 
-A foundational theory in personality assessment – the “Lexical Hypothesis” – posits that all relevant psychological differences between people are marked by trait descriptive adjectives (TDAs), and thus these adjectives could serve as the universe of stimuli which would inform the structure of personality. The full number of TDAs is in the many thousands, and so cannot be administered to any single participant; as a result, early personality psychologists subjectively reduced the set of adjectives administered. This is potentially problematic, as academic researchers may not recognize the obscure nature of some adjectives, especially for individuals with lower levels of literacy. Subsequent research on personality structure compounded such bias by using as participants homogenous samples of White, educated, and young individuals. The current study sought to quantify the knowledge of TDAs using a sample of participants recruited to be more representative of the U.S. population with respect to age, race/ethnicity, gender, and education.
+[Insert info about: the source files, downloading the data, planned updates, how users can provide feedback or suggestions, and... maybe some commentary about responsible use and interpretation? Let's discuss.]
 
-A thorough description of this work is given in Condon, Coughlin, and Weston (2022). The text below provides a brief summary of the design. To see the results of this work, begin with 
-
-# Study Design
-
-The study design involved several distinct steps, including (1) the aggregation of a trait descriptive adjective set with 2,818 terms, (2) sourcing definitions for all of the terms; (3) creating multiple choice vocabulary questions based on each term-definition pair; (4) designing and completing survey-based data collection on the pool of questions; and (5) developing tools to disseminate results from the analyses of these data and other characteristics of the 2,818 TDA set. 
-
-Step 1 began with the 1,710 terms identified by Goldberg,^1^ and supplemented these with previously dropped terms from Norman^2^ and Allport & Odbert,^3^ plus some others. In Step 2, personality-relevant definitions for the 2,818 terms were sourced from Oxford Dictionaries via Google (see the manuscript for some exceptions). In Step 3, the term-definition pairs were used to generate two multiple-choice vocabulary questions for each term, and these were administered to a large and representative sample in Step 4. Finally, in Step 5, the data were analyzed and organized for dissemination through this website.
-
-# References
-
-1. Goldberg, L. R. (1982). From Ace to Zombie: Some explorations in the language of personality. In Spielberger, C. D. and Butcher, J. N., (Eds.), *Advances in personality assessment: Vol. 1*, pages 203-234. Erlbaum, Hillsdale, NJ.
-
-2. Norman, W. T. (1967). *2800 personality trait descriptors: Normative operating characteristics for a university population.* University of Michigan, Department of Psychology, Ann Arbor.
-
+[build database interface... try putting it here, though it may be more functional to have it as a separate page.]

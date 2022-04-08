@@ -1,9 +1,13 @@
 name: Occupational prestige
 output_dir: "."
 navbar:
-  title: "TDA"
+  title: "Occupational Prestige Ratings"
   left:
   right:
+    - text: O*NET
+      href: https://www.onetonline.org/
+    - icon: fa-file
+      href: https://psyarxiv.com
     - icon: fa-github
       href: https://github.com/occupational-prestige/opratings
 output:
