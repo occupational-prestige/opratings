@@ -1,0 +1,19 @@
+---
+title: "Occupational Prestige Ratings"
+date: "Last updated `r Sys.Date()`"
+output: 
+  html_document:
+    toc: TRUE
+    code_folding: hide
+---
+
+The ratings by job title and job field are provided below. Fields are aggregated groupings of related job titles. See the [main page](https://occupational-prestige.github.io/opratings/index.html) for an overview of this project. More complete description is provided in the following manuscript:
+
+[--- citation blinded for review ---]
+<!-- 
+<font size="2">Hughes, B. T., Srivastava, S., Leszko, M., & Condon, D. M. (under review). Occupational Prestige: The Psychosocial Indicator of Socioeconomic Status. *Journal TBD*.</font>
+-->
+
+See [here](https://occupational-prestige.github.io/opratings/crosswalk.html) for a crosswalk of these ratings to older prestige ratings.
+
+
