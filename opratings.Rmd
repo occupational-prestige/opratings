@@ -11,9 +11,40 @@ The ratings by job title and job field are provided below. Fields are aggregated
 
 [--- citation blinded for review ---]
 <!-- 
-<font size="2">Hughes, B. T., Srivastava, S., Leszko, M., & Condon, D. M. (under review). Occupational Prestige: The Psychosocial Indicator of Socioeconomic Status. *Journal TBD*.</font>
+> <font size="3">Hughes, B. T., Srivastava, S., Leszko, M., & Condon, D. M. (under review). Occupational Prestige: The Psychosocial Indicator of Socioeconomic Status. *Journal TBD*.</font>
 -->
 
 See [here](https://occupational-prestige.github.io/opratings/opcrosswalk.html) for a crosswalk of these ratings to older prestige ratings.
 
+```{r, include = F}
+knitr::opts_chunk$set(echo = T, message = F, warning = F)
+```
 
+```{r}
+library(here) # for engaging with working environment
+library(Hmisc) # for weighted means
+library(DT) # for viewing data tables
+library(tidyverse) # for data cleaning and manipulation
+library(dataverse)
+library(data.table)
+```
+
+```{r, results='asis'}
+# load the data 
+opratings = read.csv(here("data/opratings.csv"))
+colnames(opratings) <- c("OPR Job Code", "OPR Job Title", "OPR Jobs 2016", "OPR Field Code", "OPR Field Title", "OPR Field 2016", "ONET SOC 2018 Code", "ONET SOC 2018 Title", "ONET SOC 2010 Code", "ONET SOC 2010 Title", "Census Code 1980", "Census Title 1980", "GSS Ratings 1989", "Census Code 2010", "Census Titles 2010", "GSS Ratings 2012")
+                
+opratings_db = opratings[,c("OPR Job Title", "OPR Jobs 2016", "OPR Field Title", "OPR Field 2016", "ONET SOC 2018 Code", "ONET SOC 2018 Title")] %>%
+  DT::datatable( # put into interactive HTML table
+    colnames = c("OPR Job Title", "OPR Job Rating", "Job Field Title", "Avg Field Rating", "ONET-SOC Code*", "ONET-SOC Title*"), #colnames
+    options = list(
+      lengthMenu = list(c(10, 50, -1), c('10', '50', 'All')),
+        pageLength = 10
+    ),
+    filter = "top", # can filter
+    rownames = F # don't need rownames
+  )
+opratings_db
+```
+
+\* Note that the ONET-SOC Codes and ONET-SOC Titles shown here are based on the values from 2018. These codes and labels are updated periodically. The raw data file also contains the codes and labels from 2010.
