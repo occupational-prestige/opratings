@@ -14,6 +14,6 @@ The ratings by job title and job field are provided below. Fields are aggregated
 <font size="2">Hughes, B. T., Srivastava, S., Leszko, M., & Condon, D. M. (under review). Occupational Prestige: The Psychosocial Indicator of Socioeconomic Status. *Journal TBD*.</font>
 -->
 
-See [here](https://occupational-prestige.github.io/opratings/crosswalk.html) for a crosswalk of these ratings to older prestige ratings.
+See [here](https://occupational-prestige.github.io/opratings/opcrosswalk.html) for a crosswalk of these ratings to older prestige ratings.
 
 

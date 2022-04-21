@@ -3,6 +3,10 @@ output_dir: "."
 navbar:
   title: "OPRv1.0"
   left:
+    - text: Occupational Prestige Ratings
+      href: opratings.html
+    - text: Crosswalk
+      href: opcrosswalk.html
   right:
     - text: O*NET
       href: https://www.onetonline.org/

@@ -1,0 +1,19 @@
+---
+title: "Occupational Prestige Ratings"
+date: "Last updated `r Sys.Date()`"
+output: 
+  html_document:
+    toc: TRUE
+    code_folding: hide
+---
+
+This database provides a crosswalk of these ratings to older prestige ratings. See the [main page](https://occupational-prestige.github.io/opratings/index.html) for an overview of this project. More complete description is provided in the following manuscript:
+
+[--- citation blinded for review ---]
+<!-- 
+<font size="2">Hughes, B. T., Srivastava, S., Leszko, M., & Condon, D. M. (under review). Occupational Prestige: The Psychosocial Indicator of Socioeconomic Status. *Journal TBD*.</font>
+-->
+
+See [this page](https://occupational-prestige.github.io/opratings/opratings.html) for a simplified database of the ratings described in the manuscript (without the older ratings).
+
+

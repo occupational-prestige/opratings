@@ -14,6 +14,8 @@ output:
 library(fontawesome)
 ```
 
+<br>
+
 ### Overview
 
 [Insert something like the abstract from the submitted manuscript here.]
@@ -23,8 +25,9 @@ For more details, see [--- citation blinded for review ---]
 <font size="2">Hughes, B. T., Srivastava, S., Leszko, M., & Condon, D. M. (under review). Occupational Prestige: The Psychosocial Indicator of Socioeconomic Status. *Journal TBD*.</font>
 -->
 
+<br>
+
 ### About the ratings
 
 [Insert info about: the source files, downloading the data, planned updates, how users can provide feedback or suggestions, and... maybe some commentary about responsible use and interpretation? Let's discuss.]
 
-### DATABASE GOES HERE
