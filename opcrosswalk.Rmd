@@ -11,8 +11,20 @@ This database provides a crosswalk of these ratings to older prestige ratings. S
 
 [--- citation blinded for review ---]
 <!-- 
-> <font size="3">Hughes, B. T., Srivastava, S., Leszko, M., & Condon, D. M. (under review). Occupational Prestige: The Psychosocial Indicator of Socioeconomic Status. *Journal TBD*.</font>
+<font size="2">Hughes, B. T., Srivastava, S., Leszko, M., & Condon, D. M. (under review). Occupational Prestige: The Status Component of Socioeconomic Status. *Journal of Personality and Social Psychology*.</font>
+ALSO!!!
+in _site.yml, replace:
+https://github.com/
+with:
+https://github.com/occupational-prestige/opratings
+and:
+https://psyarxiv.com
+with:
+https://psyarxiv.com/6qgxv/
+AND DON'T FORGET TO UPDATE THE OTHER PAGES WITH THE CORRECT CITATION INFO AND LINKS.
+
 -->
+
 
 See [this page](https://occupational-prestige.github.io/opratings/opratings.html) for a simplified database of the ratings described in the manuscript (without the older ratings).
 

@@ -13,7 +13,7 @@ navbar:
     - icon: fa-file
       href: https://psyarxiv.com
     - icon: fa-github
-      href: https://github.com/occupational-prestige/opratings
+      href: https://github.com/
 output:
   html_document:
     lib_dir: site_libs

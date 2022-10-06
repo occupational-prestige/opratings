@@ -1,7 +1,7 @@
 ---
 title: Occupational Prestige Ratings
 subtitle: 
-author: [--- author names blinded for review ---]
+author: 
 output: 
   html_document:
     toc: FALSE
@@ -14,27 +14,42 @@ output:
 library(fontawesome)
 ```
 
-<br>
+This website provides access to the occupational prestige ratings reported in
 
-### Overview
-
-[Insert something like the abstract from the submitted manuscript here.]
-
-For more details, see [--- citation blinded for review ---]
+[--- citation blinded for review ---].
 <!-- 
-<font size="2">Hughes, B. T., Srivastava, S., Leszko, M., & Condon, D. M. (under review). Occupational Prestige: The Psychosocial Indicator of Socioeconomic Status. *Journal TBD*.</font>
+<font size="2">Hughes, B. T., Srivastava, S., Leszko, M., & Condon, D. M. (under review). Occupational Prestige: The Status Component of Socioeconomic Status. *Journal of Personality and Social Psychology*.</font>
+ALSO!!!
+in _site.yml, replace:
+https://github.com/
+with:
+https://github.com/occupational-prestige/opratings
+and:
+https://psyarxiv.com
+with:
+https://psyarxiv.com/6qgxv/
+AND DON'T FORGET TO UPDATE THE OTHER PAGES WITH THE CORRECT CITATION INFO AND LINKS.
+
 -->
 
-<br>
+**Click [here](https://occupational-prestige.github.io/opratings/opratings.html) to access the ratings database.**
 
-### About the ratings
-
-[Insert info about: the source files, downloading the data, planned updates, how users can provide feedback or suggestions, and commentary about responsible use and interpretation.]
-
---- The occupational prestige ratings described in the manuscript are here:
 [https://occupational-prestige.github.io/opratings/opratings.html](https://occupational-prestige.github.io/opratings/opratings.html)
 
---- A crosswalk of these ratings to older versions can be found here:
+**Or click [here](https://occupational-prestige.github.io/opratings/opcrosswalk.html) to access the crosswalk of these ratings with older metrics of occupational prestige.**
+
 [https://occupational-prestige.github.io/opratings/opcrosswalk.html](https://occupational-prestige.github.io/opratings/opcrosswalk.html)
 
---- The code used to create this website is here: [https://github.com/occupational-prestige/opratings](https://github.com/pie-lab/opratings).
+<br>
+
+### Overview of the Project
+
+The relationship between life outcomes and an individual's standing in the social and economic hierarchy of society is an important topic across the social sciences. The operationalization of one’s standing in this hierarchy is often referred to as their socioeconomic status (SES). An important component of SES, often overlooked in the psychological literature, is occupational prestige – the amount of status accorded to an individual based on their occupational role. In the present research project, we collected and validated a new index of occupational prestige for 1029 specific occupations, including all jobs in the US Department of Labor's O\*NET database and 22 broader occupational families. In Study 1 of the project, we collected a comprehensive set of occupational prestige ratings and demonstrated their high reliability. In Study 2, we developed a crosswalk between the ratings collected in Study 1 and prior ratings of occupations listed in the US Census and show convergent validity with previous indices. In Studies 3 and 4 we used additional data to evaluate the construct validity of occupational prestige more broadly. In Study 3, we established convergent and discriminant validity with other indicators of SES: income and educational attainment. In Study 4, we use the O\*NET database to identify the characteristics of occupations most strongly associated with prestige. These results support the validity of the index and suggest occupations with high prestige require skills traditionally emphasized in liberal arts education (e.g., critical thinking, reading comprehension).
+
+<br>
+
+The code used to create this website can be found here: 
+[--- github details temporarily blinded for review ---]
+<!--
+[https://github.com/occupational-prestige/opratings](https://github.com/occupational-prestige/opratings).
+-->
