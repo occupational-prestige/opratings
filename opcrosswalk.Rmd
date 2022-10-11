@@ -37,8 +37,30 @@ library(here) # for engaging with working environment
 library(Hmisc) # for weighted means
 library(DT) # for viewing data tables
 library(tidyverse) # for data cleaning and manipulation
+library(conflicted)
 library(dataverse)
 library(data.table)
+conflict_prefer("here", "here")
+conflict_prefer("filter", "dplyr")
+conflict_prefer("count", "dplyr")
+conflict_prefer("mutate", "dplyr")
+conflict_prefer("summarise", "dplyr")
+
+# There are two options for loading the data
+# The first option is to download the data manually
+# It's on Dataverse at the doi link below
+# https://doi.org/10.7910/DVN/5T80PF
+
+# Then load it from the local hard drive
+# opratings = read.csv(here("data/opratings.csv"))
+
+# The second option is to scrap the data file in directly
+# Sys.setenv("DATAVERSE_SERVER" = "dataverse.harvard.edu")
+# writeBin(get_file("TDA_data_scored.tab", "doi:10.7910/DVN/5T80PF"), "TDA_data_scored.tab")
+# TDA_data_scored.tab <- fread("TDA_data_scored.tab", na.strings=getOption("<NA>","NA"))
+# data <- as.data.frame(TDA_data_scored.tab)
+# rm(TDA_data_scored.tab)
+
 ```
 
 ```{r, results='asis'}
