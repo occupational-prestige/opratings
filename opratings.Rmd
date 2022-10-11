@@ -39,14 +39,30 @@ library(DT) # for viewing data tables
 library(tidyverse) # for data cleaning and manipulation
 library(dataverse)
 library(data.table)
+
+# There are two options for loading the data
+# The first option is to download the data manually
+# It's on Dataverse at the doi link below
+# https://doi.org/10.7910/DVN/5T80PF
+
+# Then load it from the local hard drive
+# opratings = read.csv(here("data/opratings.csv"))
+
+# The second option is to scrap the data file in directly
+# Sys.setenv("DATAVERSE_SERVER" = "dataverse.harvard.edu")
+# writeBin(get_file("TDA_data_scored.tab", "doi:10.7910/DVN/5T80PF"), "TDA_data_scored.tab")
+# TDA_data_scored.tab <- fread("TDA_data_scored.tab", na.strings=getOption("<NA>","NA"))
+# data <- as.data.frame(TDA_data_scored.tab)
+# rm(TDA_data_scored.tab)
+
 ```
 
 ```{r, results='asis'}
 # load the data 
 opratings = read.csv(here("data/opratings.csv"))
-colnames(opratings) <- c("OPR Job Code", "OPR Job Title", "OPR Jobs 2016", "OPR Field Code", "OPR Field Title", "OPR Field 2016", "ONET SOC 2018 Code", "ONET SOC 2018 Title", "ONET SOC 2010 Code", "ONET SOC 2010 Title", "Census Code 1980", "Census Title 1980", "GSS Ratings 1989", "Census Code 2010", "Census Titles 2010", "GSS Ratings 2012")
-                
-opratings_db = opratings[,c("OPR Job Title", "OPR Jobs 2016", "OPR Field Title", "OPR Field 2016", "ONET SOC 2018 Code", "ONET SOC 2018 Title")] %>%
+colnames(opratings) <- gsub(".", " ", colnames(opratings), fixed=TRUE)
+
+opratings_db = opratings[,c("OPR Job Title", "OPR Job Rating", "OPR Field Title", "OPR Field Rating", "ONET SOC 2018 Code", "ONET SOC 2018 Title")] %>%
   DT::datatable( # put into interactive HTML table
     colnames = c("OPR Job Title", "OPR Job Rating", "Job Field Title", "Avg Field Rating", "ONET-SOC Code*", "ONET-SOC Title*"), #colnames
     options = list(
