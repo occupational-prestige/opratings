@@ -49,17 +49,15 @@ library(data.table)
 # opratings = read.csv(here("data/opratings.csv"))
 
 # The second option is to scrap the data file in directly
-# Sys.setenv("DATAVERSE_SERVER" = "dataverse.harvard.edu")
-# writeBin(get_file("TDA_data_scored.tab", "doi:10.7910/DVN/G1E4BF"), "opratings.tab")
-# opratings.tab <- fread("opratings.tab", na.strings=getOption("<NA>","NA"))
-# opratings <- as.data.frame(opratings.tab)
-# rm(opratings.tab)
+Sys.setenv("DATAVERSE_SERVER" = "dataverse.harvard.edu")
+writeBin(get_file("OccupationalPrestigeRatings.tab", "doi:10.7910/DVN/G1E4BF"), "OccupationalPrestigeRatings.tab")
+OccupationalPrestigeRatings.tab <- fread("OccupationalPrestigeRatings.tab", na.strings=getOption("<NA>","NA"))
+opratings <- as.data.frame(OccupationalPrestigeRatings.tab)
+rm(OccupationalPrestigeRatings.tab)
 
 ```
 
 ```{r, results='asis'}
-# load the data 
-opratings = read.csv(here("data/opratings.csv"))
 colnames(opratings) <- gsub(".", " ", colnames(opratings), fixed=TRUE)
 
 opratings_db = opratings[,c("OPR Job Title", "OPR Job Rating", "OPR Field Title", "OPR Field Rating", "ONET SOC 2018 Code", "ONET SOC 2018 Title")] %>%
